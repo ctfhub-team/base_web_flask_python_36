@@ -1,0 +1,8 @@
+#! /bin/sh
+
+if [ -f /flag.sh ];then
+    source /flag.sh
+fi
+
+echo "Running..."
+env flask run -h 0.0.0.0 -p 80
